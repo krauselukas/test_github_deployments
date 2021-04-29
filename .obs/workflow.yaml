@@ -9,15 +9,10 @@ workflow123:
         - 2.10   
   steps:
     - branch_package:
-        source_project: OBS:Server:Unstable
-        source_package: obs-server
+        source_project: test-project
+        source_package: test-package
         # in code, we add $PR-ID$ after this prefix. we need to document this
         destination_project_prefix: OBS:Server:Unstable:PR- 
-        destination_package: obs-server
-    - branch_package:
-        source_project: OBS:Server:Unstable
-        source_package: obs-server
-        # in code, we add $PR-ID$ after this prefix. we need to document this
-        destination_project_prefix: OBS:Server:Unstable:PR- 
-        destination_package: obs-server
+        destination_package: test-package
+    
     
