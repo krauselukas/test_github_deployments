@@ -9,10 +9,10 @@ workflow123:
         - 2.10   
   steps:
     - branch_package:
-        source_project: test-project
-        source_package: test-package
+        source_project: "home:Admin"
+        source_package: "test_github_webhook"
         # in code, we add $PR-ID$ after this prefix. we need to document this
-        destination_project_prefix: OBS:Server:Unstable:PR- 
-        destination_package: test-package
+        # destination_project_prefix: OBS:Server:Unstable:PR- 
+        # destination_package: test-package
     
     
